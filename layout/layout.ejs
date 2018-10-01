@@ -25,3 +25,11 @@
   </div>
 </body>
 </html>
+
+<% if (!(theme.style && theme.style.bubble)) { %>
+<style>
+  #container.show .anm-canvas {
+    display: none;
+  }
+</style>
+<% } %>
