@@ -40,4 +40,10 @@
   </style>
   <%- partial('google-analytics') %>
   <%- partial('baidu-analytics') %>
+  <script src="//<%= config.cdn %>/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("div.article-entry[itemprop=articleBody]").css("visibility", "visible");
+    })
+  </script>
 </head>
