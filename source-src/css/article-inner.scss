@@ -80,15 +80,6 @@
   p{
     margin-top: 10px;
   }
-  p code,li code{
-    padding: 1px 3px;
-    margin: 0 3px;
-    background: #ddd;
-    border: 1px solid #ccc;
-    font-family: Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
-    word-wrap: break-word;
-    font-size: 14px;
-  }
   blockquote {
     background: #ddd;
     border-left: 5px solid #ccc;
@@ -175,19 +166,6 @@
     border-right: 0;
     border-top: 1px solid #DDD;
     border-bottom: 1px solid #FFF;
-  }
-  pre {
-    line-height: 1.5;
-    margin-top: 10px;
-    padding: 5px 15px;
-    overflow-x: auto;
-    color: #657b83;
-    border: 1px solid #ccc;
-    text-shadow: 0 1px #444;
-    font-family: Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
-    code{
-      font-size: 14px;
-    }
   }
   table{
     width:100%;
