@@ -58,6 +58,8 @@ toc: 1
 toc_hide_index: true
 # 目录为空时的提示
 toc_empty_wording: '目录，不存在的…'
+# 目录样式
+toc_type: new
 
 # 是否有快速回到顶部的按钮
 top: true
