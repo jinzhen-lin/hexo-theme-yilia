@@ -1,0 +1,78 @@
+
+
+<%- partial('highlight') %>
+
+
+<!-- 引用框背景 -->
+<style>
+  .article-entry blockquote {
+    background: rgba(102,128,153,.05);
+    border-color: #D6DBDF;
+  }
+</style>
+
+
+<!-- task-list的checkbox更换样式与切换选中状态 -->
+<link href="https://<%= config.cdn %>/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<style>
+  .article-entry ul li.task-list-item:before {
+    display: none;
+  }
+
+  i.task-list-checkbox {
+    width: 1.1em;
+  }
+</style>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $("ul li input[type=checkbox]").parent().addClass("task-list-item");
+    $(".task-list-item input:checked").after('<i class="fa fa-check-square task-list-checkbox"></i>');
+    $(".task-list-item input:not(:checked)").after('<i class="fa fa-square-o task-list-checkbox"></i>');
+    $(".task-list-item input").remove();
+    $(".task-list-item i.task-list-checkbox").click(function() {
+      $(this).toggleClass("fa-square-o");
+      $(this).toggleClass("fa-check-square");
+    });
+  });
+</script>
+
+
+<!-- 脚注 -->
+<style>
+  section.footnotes {
+    color: gray;
+  }
+
+  section.footnotes li {
+    list-style: none;
+    display: table-row;
+  }
+
+  section.footnotes li:before {
+    counter-increment: item;
+    content: counter(item) ".";
+    display: table-cell;
+    padding-right: 10px;
+    text-align: right;
+  }
+
+  section.footnotes li div {
+    display: table-cell;
+  }
+
+  section.footnotes li div p {
+    margin: 0;
+  }
+</style>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $("section.footnotes li").each(function() {
+      var li_node = $(this);
+      var div_node = $("<div></div>")
+      var li_id = $("#fn1").attr("id");
+      var div_id = "div-" + li_id;
+      div_node = div_node.attr("id", div_id).addClass("footnotes-div").html(li_node.html());
+      li_node.html(div_node.prop("outerHTML"));
+    })
+  })
+</script>
