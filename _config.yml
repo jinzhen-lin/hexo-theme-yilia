@@ -6,10 +6,8 @@ menu:
 
 # SubNav
 subnav:
-  github: "#"
-  weibo: "#"
-  rss: "#"
-  zhihu: "#"
+  github: "https://github.com/jinzhen-lin"
+  rss: "/atom.xml"
   #qq: "#"
   #weixin: "#"
   #jianshu: "#"
@@ -17,7 +15,7 @@ subnav:
   #segmentfault: "#"
   #bilibili: "#"
   #acfun: "#"
-  #mail: "mailto:litten225@qq.com"
+  mail: "mailto:linjinzhen@hotmail.com"
   #facebook: "#"
   #google: "#"
   #twitter: "#"
@@ -70,7 +68,7 @@ google_analytics: ''
 favicon: /favicon.png
 
 #你的头像url
-avatar:
+avatar: /avatar.jpg
 
 #是否开启分享
 share_jia: true
@@ -119,7 +117,6 @@ slider:
 #  friends: false
 smart_menu:
   innerArchive: '所有文章'
-  friends: '友链'
   aboutme: '关于我'
 
 friends:
