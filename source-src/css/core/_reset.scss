@@ -384,6 +384,30 @@ ul, ol {
     list-style: none outside none;
 }
 
+.article-entry {
+  ul {
+    display: block;
+    list-style-type: disc;
+  }
+  
+  ol {
+    display: block;
+    list-style-type: decimal;
+  }
+  
+  li {
+      display: list-item
+  }
+
+  ul ul, ol ul {
+      list-style-type: circle
+  }
+
+  ol ol ul, ol ul ul, ul ol ul, ul ul ul {
+      list-style-type: square
+  }
+}
+
 // hn
 h1, h2, h3 {
     line-height: 2;

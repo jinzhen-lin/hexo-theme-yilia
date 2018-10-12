@@ -18,7 +18,15 @@
   .article-entry ul li.task-list-item:before {
     display: none;
   }
-
+  
+  .article-entry ul li.task-list-item {
+    list-style: none;
+  }
+  
+  .article-entry ul li.task-list-item p {
+    margin-top: 0;
+  }
+  
   i.task-list-checkbox {
     width: 1.1em;
   }
@@ -76,3 +84,38 @@
     })
   })
 </script>
+
+
+
+<style>
+  .article-entry li code, .article-entry p code {
+    border: none;
+    border-radius: 5px;
+    font-size: inherit;
+    background-color: #D6DBDF;
+  }
+</style>
+
+
+
+<style>
+  .article-entry ul li:before {
+    display: none;
+  }
+  
+  .article-entry ol li:before {
+    display: none;
+  }
+  
+  .article-entry li ol li:before,.article-entry li ul li:before {
+    display: none;
+  }
+
+  .article-entry li ol, .article-entry li ul {
+    font-size: inherit;
+  }
+
+  .article-entry ul, .article-entry ol {
+    list-style-position: inside;
+  }
+</style>
